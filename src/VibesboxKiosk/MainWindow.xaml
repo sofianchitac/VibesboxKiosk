@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="VibesboxKiosk.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="VibesboxKiosk">
+
+    <!-- Hosts either the dashboard or the settings page (swapped in code-behind). -->
+    <Border x:Name="Host" Background="{StaticResource BgPrimaryBrush}"/>
+</Window>

@@ -1,0 +1,559 @@
+{
+  "kind": "MainCompartment",
+  "version": "2.18.2",
+  "value": {
+    "defaultGroup": {},
+    "mappings": [
+      {
+        "id": "_m-o-WzAsfDJ4dzhbbBro",
+        "name": "Upmix",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/01",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "trackGUID": "0EB56EFD-E0DB-43FA-918C-68766B372DC3",
+          "fxAnchor": "id",
+          "fxGUID": "AA6DB702-2A89-4BC9-A83C-1DF38DBF22C7",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 2,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        }
+      },
+      {
+        "id": "4YBf0Ktblnf52FMxVxwf-",
+        "name": "NDI Out",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/02",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "trackGUID": "00C8E4B4-DD6C-45B9-90AA-B26E3BFDF365",
+          "fxAnchor": "id",
+          "fxIndex": 1,
+          "fxGUID": "335BAFE9-41E0-4C8A-984F-64413B7E4309",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        }
+      },
+      {
+        "id": "XaHSMCvrhWyHIYHIyeO3Q",
+        "name": "Warmth",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/03",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "trackGUID": "D7FE002C-F619-4A69-80E2-C61186B74D61",
+          "fxAnchor": "id",
+          "fxGUID": "484C4FAF-B120-4227-9E1D-38D26E845F6C",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 554,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        }
+      },
+      {
+        "id": "LeJR1oEsryFpqVm1jS3Na",
+        "name": "Loudness",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/04",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "trackGUID": "6546E1BD-8630-4DC9-9D7A-D6E1B8BB9827",
+          "fxAnchor": "id",
+          "fxGUID": "B8E0C498-5918-40EA-B527-600141AA27FE",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 600,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        }
+      },
+      {
+        "id": "23kQTx8Sew0pwIJxytuky",
+        "name": "Front",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/05",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "type": 7,
+          "trackGUID": "BE896E92-1F4D-42F2-A57D-D1EAB6A241FB",
+          "fxAnchor": "id",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        }
+      },
+      {
+        "id": "yCk_M3v2lKXzYbpelmZjt",
+        "name": "Surround",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/06",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "type": 7,
+          "trackGUID": "B420D297-7DE7-4797-9898-15797CCB5115",
+          "fxAnchor": "id",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        }
+      },
+      {
+        "id": "vEFH6hteJurQ0sl_kF2vS",
+        "name": "Sub",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/07",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "type": 7,
+          "trackGUID": "BD2889E7-179E-4F60-995C-6ACDF969D76A",
+          "fxAnchor": "id",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        }
+      },
+      {
+        "id": "PjkYgagw0IhuoEO7E7TBC",
+        "name": "Dirac",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/08",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "type": 53,
+          "fxAnchor": "id",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        }
+      },
+      {
+        "id": "M8INNuN3cdAT5LHIs8qp6",
+        "name": "REAPER Alive Indicator.",
+        "source": {
+          "category": "reaper",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/dsp/on",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          },
+          "reaperSourceType": "timer",
+          "timerMillis": 300
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "type": 30,
+          "trackGUID": "7EF19F2A-8C67-4968-A47C-567EA8CCC7E3",
+          "fxAnchor": "id",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "seekBehavior": "Immediate",
+          "anyOnParameter": "track-selection",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscAddressPattern": "/vibesbox/dsp/on",
+          "oscArgIndex": 0,
+          "oscDevId": "b9690d17-d2d4-4195-8eee-1f063f2f150a",
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        }
+      },
+      {
+        "id": "vA3ie3hymiIQcmPsLoVva",
+        "name": "Refresh Kiosk",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/dsp/refresh",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "type": 0,
+          "commandName": "REALEARN_SEND_ALL_FEEDBACK",
+          "fxAnchor": "id",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "feedbackIsEnabled": false
+      },
+      {
+        "id": "EFZ17TD4t9qhGzJQDjhm9",
+        "name": "Master Volume Glow",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/master/vol",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "type": 34,
+          "trackGUID": "97C22571-FC91-47E5-B50D-01BB503AFE94",
+          "fxAnchor": "id",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "B3nAAPDJK5Jxn71Vmbrl9",
+        "name": "SilentQuit",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/power/reaper-quit",
+          "oscArgIndex": 0,
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "type": 0,
+          "commandName": "S&M_CYCLACTION_1",
+          "fxAnchor": "id",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        }
+      }
+    ]
+  }
+}

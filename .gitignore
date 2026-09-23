@@ -1,0 +1,39 @@
+## .NET / Visual Studio
+bin/
+obj/
+publish/
+*.user
+*.suo
+*.userprefs
+.vs/
+.vscode/
+*.swp
+
+## Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Rider
+.idea/
+
+## Logs (kiosk app writes to ProgramData, not the repo, but just in case)
+*.log
+logs/
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Installer output
+installer/Output/

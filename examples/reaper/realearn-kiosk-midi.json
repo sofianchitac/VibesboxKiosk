@@ -1,0 +1,374 @@
+{
+    "kind": "MainCompartment",
+    "version": "2.18.2",
+    "value": {
+        "defaultGroup": {},
+        "groups": [
+            {
+                "id": "As8VF_wc3014nmhGD0tjp",
+                "name": "monitoring Dot"
+            }
+        ],
+        "mappings": [
+            {
+                "id": "snToLJ5bAcRSdmR2BkjL9",
+                "name": "Bass",
+                "source": {
+                    "channel": 0,
+                    "number": 1,
+                    "isRegistered": false,
+                    "is14Bit": false,
+                    "oscArgIndex": 0,
+                    "buttonIndex": 0,
+                    "buttonDesign": {
+                        "background": {
+                            "kind": "Color"
+                        },
+                        "foreground": {
+                            "kind": "None"
+                        },
+                        "static_text": ""
+                    }
+                },
+                "mode": {
+                    "minTargetValue": 0.3,
+                    "maxTargetValue": 0.7,
+                    "maxStepSize": 0.05,
+                    "minStepFactor": 1,
+                    "maxStepFactor": 1
+                },
+                "target": {
+                    "trackGUID": "D7FE002C-F619-4A69-80E2-C61186B74D61",
+                    "fxAnchor": "id",
+                    "fxGUID": "484C4FAF-B120-4227-9E1D-38D26E845F6C",
+                    "useSelectionGanging": false,
+                    "useTrackGrouping": false,
+                    "paramIndex": 3,
+                    "seekBehavior": "Immediate",
+                    "useProject": true,
+                    "moveView": true,
+                    "seekPlay": true,
+                    "oscArgIndex": 0,
+                    "mouseAction": {
+                        "kind": "MoveTo",
+                        "axis": "X"
+                    },
+                    "takeMappingSnapshot": {
+                        "kind": "LastLoaded"
+                    }
+                },
+                "feedbackIsEnabled": false
+            },
+            {
+                "id": "c81YOYDEB6wwom41SgLL1",
+                "name": "Bass Feedback",
+                "source": {
+                    "category": "osc",
+                    "channel": 0,
+                    "number": 1,
+                    "isRegistered": false,
+                    "is14Bit": false,
+                    "oscAddressPattern": "/vibesbox/eq/bass",
+                    "oscArgIndex": 0,
+                    "oscArgValueRange": {
+                        "min": -12.0,
+                        "max": 12.0
+                    },
+                    "buttonIndex": 0,
+                    "buttonDesign": {
+                        "background": {
+                            "kind": "Color"
+                        },
+                        "foreground": {
+                            "kind": "None"
+                        },
+                        "static_text": ""
+                    }
+                },
+                "mode": {
+                    "minTargetValue": 0.3,
+                    "maxTargetValue": 0.7,
+                    "maxStepSize": 0.05,
+                    "minStepFactor": 1,
+                    "maxStepFactor": 1
+                },
+                "target": {
+                    "trackGUID": "D7FE002C-F619-4A69-80E2-C61186B74D61",
+                    "fxAnchor": "id",
+                    "fxGUID": "484C4FAF-B120-4227-9E1D-38D26E845F6C",
+                    "useSelectionGanging": false,
+                    "useTrackGrouping": false,
+                    "paramIndex": 3,
+                    "seekBehavior": "Immediate",
+                    "useProject": true,
+                    "moveView": true,
+                    "seekPlay": true,
+                    "oscArgIndex": 0,
+                    "mouseAction": {
+                        "kind": "MoveTo",
+                        "axis": "X"
+                    },
+                    "takeMappingSnapshot": {
+                        "kind": "LastLoaded"
+                    }
+                },
+                "controlIsEnabled": false
+            },
+            {
+                "id": "Oi8LI8eqivz8AO-i0uCKt",
+                "name": "Treble",
+                "source": {
+                    "channel": 0,
+                    "number": 2,
+                    "isRegistered": false,
+                    "is14Bit": false,
+                    "oscArgIndex": 0,
+                    "buttonIndex": 0,
+                    "buttonDesign": {
+                        "background": {
+                            "kind": "Color"
+                        },
+                        "foreground": {
+                            "kind": "None"
+                        },
+                        "static_text": ""
+                    }
+                },
+                "mode": {
+                    "minTargetValue": 0.3,
+                    "maxTargetValue": 0.7,
+                    "maxStepSize": 0.05,
+                    "minStepFactor": 1,
+                    "maxStepFactor": 1
+                },
+                "target": {
+                    "trackGUID": "D7FE002C-F619-4A69-80E2-C61186B74D61",
+                    "fxAnchor": "id",
+                    "fxGUID": "484C4FAF-B120-4227-9E1D-38D26E845F6C",
+                    "useSelectionGanging": false,
+                    "useTrackGrouping": false,
+                    "paramIndex": 26,
+                    "seekBehavior": "Immediate",
+                    "useProject": true,
+                    "moveView": true,
+                    "seekPlay": true,
+                    "oscArgIndex": 0,
+                    "mouseAction": {
+                        "kind": "MoveTo",
+                        "axis": "X"
+                    },
+                    "takeMappingSnapshot": {
+                        "kind": "LastLoaded"
+                    }
+                },
+                "feedbackIsEnabled": false
+            },
+            {
+                "id": "79vK-Yghu_OzO909KvJIw",
+                "name": "Treble Feedback",
+                "source": {
+                    "category": "osc",
+                    "channel": 0,
+                    "number": 2,
+                    "isRegistered": false,
+                    "is14Bit": false,
+                    "oscAddressPattern": "/vibesbox/eq/treble",
+                    "oscArgIndex": 0,
+                    "oscArgValueRange": {
+                        "min": -12.0,
+                        "max": 12.0
+                    },
+                    "buttonIndex": 0,
+                    "buttonDesign": {
+                        "background": {
+                            "kind": "Color"
+                        },
+                        "foreground": {
+                            "kind": "None"
+                        },
+                        "static_text": ""
+                    }
+                },
+                "mode": {
+                    "minTargetValue": 0.3,
+                    "maxTargetValue": 0.7,
+                    "maxStepSize": 0.05,
+                    "minStepFactor": 1,
+                    "maxStepFactor": 5
+                },
+                "target": {
+                    "trackGUID": "D7FE002C-F619-4A69-80E2-C61186B74D61",
+                    "fxAnchor": "id",
+                    "fxGUID": "484C4FAF-B120-4227-9E1D-38D26E845F6C",
+                    "useSelectionGanging": false,
+                    "useTrackGrouping": false,
+                    "paramIndex": 26,
+                    "seekBehavior": "Immediate",
+                    "useProject": true,
+                    "moveView": true,
+                    "seekPlay": true,
+                    "oscArgIndex": 0,
+                    "mouseAction": {
+                        "kind": "MoveTo",
+                        "axis": "X"
+                    },
+                    "takeMappingSnapshot": {
+                        "kind": "LastLoaded"
+                    }
+                },
+                "controlIsEnabled": false
+            },
+            {
+                "id": "Y92xezt4Mxh9SGMzuoX2k",
+                "name": "Volume",
+                "source": {
+                    "channel": 0,
+                    "number": 0,
+                    "isRegistered": false,
+                    "is14Bit": false,
+                    "oscArgIndex": 0,
+                    "buttonIndex": 0,
+                    "buttonDesign": {
+                        "background": {
+                            "kind": "Color"
+                        },
+                        "foreground": {
+                            "kind": "None"
+                        },
+                        "static_text": ""
+                    }
+                },
+                "mode": {
+                    "maxStepSize": 0.05,
+                    "minStepFactor": 1,
+                    "maxStepFactor": 5
+                },
+                "target": {
+                    "unit": "percent",
+                    "type": 2,
+                    "trackGUID": "97C22571-FC91-47E5-B50D-01BB503AFE94",
+                    "fxAnchor": "id",
+                    "useSelectionGanging": false,
+                    "useTrackGrouping": false,
+                    "seekBehavior": "Immediate",
+                    "useProject": true,
+                    "moveView": true,
+                    "seekPlay": true,
+                    "oscArgIndex": 0,
+                    "mouseAction": {
+                        "kind": "MoveTo",
+                        "axis": "X"
+                    },
+                    "takeMappingSnapshot": {
+                        "kind": "LastLoaded"
+                    }
+                },
+                "feedbackIsEnabled": false
+            },
+            {
+                "id": "79CurLzwztobnsR8dysQH",
+                "name": "Volume feedback",
+                "source": {
+                    "category": "osc",
+                    "channel": 0,
+                    "number": 0,
+                    "isRegistered": false,
+                    "is14Bit": false,
+                    "oscAddressPattern": "/vibesbox/master/db",
+                    "oscArgIndex": 0,
+                    "oscArgValueRange": {
+                        "min": 0.0,
+                        "max": 100.0
+                    },
+                    "buttonIndex": 0,
+                    "buttonDesign": {
+                        "background": {
+                            "kind": "Color"
+                        },
+                        "foreground": {
+                            "kind": "None"
+                        },
+                        "static_text": ""
+                    }
+                },
+                "mode": {
+                    "minTargetValue": 0.009631151236233449,
+                    "maxStepSize": 0.05,
+                    "minStepFactor": 1,
+                    "maxStepFactor": 5
+                },
+                "target": {
+                    "type": 2,
+                    "trackGUID": "97C22571-FC91-47E5-B50D-01BB503AFE94",
+                    "fxAnchor": "id",
+                    "useSelectionGanging": false,
+                    "useTrackGrouping": false,
+                    "seekBehavior": "Immediate",
+                    "useProject": true,
+                    "moveView": true,
+                    "seekPlay": true,
+                    "oscArgIndex": 0,
+                    "mouseAction": {
+                        "kind": "MoveTo",
+                        "axis": "X"
+                    },
+                    "takeMappingSnapshot": {
+                        "kind": "LastLoaded"
+                    }
+                },
+                "controlIsEnabled": false
+            },
+            {
+                "id": "iTwEBJN-spGGbrT_W_HOE",
+                "name": "MIDI Dot",
+                "groupId": "As8VF_wc3014nmhGD0tjp",
+                "source": {
+                    "isRegistered": false,
+                    "is14Bit": false,
+                    "oscAddressPattern": "/vibesbox/in/midi/active",
+                    "oscArgIndex": 0,
+                    "buttonIndex": 0,
+                    "buttonDesign": {
+                        "background": {
+                            "kind": "Color"
+                        },
+                        "foreground": {
+                            "kind": "None"
+                        },
+                        "static_text": ""
+                    }
+                },
+                "mode": {
+                    "maxStepSize": 0.05,
+                    "minStepFactor": 1,
+                    "maxStepFactor": 5
+                },
+                "target": {
+                    "type": 30,
+                    "trackGUID": "567CCF7D-3DC5-430C-8D00-9B104A88AAAC",
+                    "trackName": "NDI 6ch In",
+                    "fxAnchor": "id",
+                    "useSelectionGanging": false,
+                    "useTrackGrouping": false,
+                    "soloBehavior": 1,
+                    "seekBehavior": "Immediate",
+                    "useProject": true,
+                    "moveView": true,
+                    "seekPlay": true,
+                    "sendMidiDestination": "input-device",
+                    "midiInputDeviceId": 0,
+                    "oscAddressPattern": "/vibesbox/in/midi/active",
+                    "oscArgIndex": 0,
+                    "oscDevId": "b9690d17-d2d4-4195-8eee-1f063f2f150a",
+                    "mouseAction": {
+                        "kind": "MoveTo",
+                        "axis": "X"
+                    },
+                    "takeMappingSnapshot": {
+                        "kind": "LastLoaded"
+                    }
+                }
+            }
+        ]
+    }
+}

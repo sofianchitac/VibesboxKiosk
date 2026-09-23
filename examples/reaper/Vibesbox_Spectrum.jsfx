@@ -1,0 +1,235 @@
+desc:Vibesbox 64-Band Spectrum Analyzer
+
+slider1:-70<-70,0,0.1>-Band 0
+slider2:-70<-70,0,0.1>-Band 1
+slider3:-70<-70,0,0.1>-Band 2
+slider4:-70<-70,0,0.1>-Band 3
+slider5:-70<-70,0,0.1>-Band 4
+slider6:-70<-70,0,0.1>-Band 5
+slider7:-70<-70,0,0.1>-Band 6
+slider8:-70<-70,0,0.1>-Band 7
+slider9:-70<-70,0,0.1>-Band 8
+slider10:-70<-70,0,0.1>-Band 9
+slider11:-70<-70,0,0.1>-Band 10
+slider12:-70<-70,0,0.1>-Band 11
+slider13:-70<-70,0,0.1>-Band 12
+slider14:-70<-70,0,0.1>-Band 13
+slider15:-70<-70,0,0.1>-Band 14
+slider16:-70<-70,0,0.1>-Band 15
+slider17:-70<-70,0,0.1>-Band 16
+slider18:-70<-70,0,0.1>-Band 17
+slider19:-70<-70,0,0.1>-Band 18
+slider20:-70<-70,0,0.1>-Band 19
+slider21:-70<-70,0,0.1>-Band 20
+slider22:-70<-70,0,0.1>-Band 21
+slider23:-70<-70,0,0.1>-Band 22
+slider24:-70<-70,0,0.1>-Band 23
+slider25:-70<-70,0,0.1>-Band 24
+slider26:-70<-70,0,0.1>-Band 25
+slider27:-70<-70,0,0.1>-Band 26
+slider28:-70<-70,0,0.1>-Band 27
+slider29:-70<-70,0,0.1>-Band 28
+slider30:-70<-70,0,0.1>-Band 29
+slider31:-70<-70,0,0.1>-Band 30
+slider32:-70<-70,0,0.1>-Band 31
+slider33:-70<-70,0,0.1>-Band 32
+slider34:-70<-70,0,0.1>-Band 33
+slider35:-70<-70,0,0.1>-Band 34
+slider36:-70<-70,0,0.1>-Band 35
+slider37:-70<-70,0,0.1>-Band 36
+slider38:-70<-70,0,0.1>-Band 37
+slider39:-70<-70,0,0.1>-Band 38
+slider40:-70<-70,0,0.1>-Band 39
+slider41:-70<-70,0,0.1>-Band 40
+slider42:-70<-70,0,0.1>-Band 41
+slider43:-70<-70,0,0.1>-Band 42
+slider44:-70<-70,0,0.1>-Band 43
+slider45:-70<-70,0,0.1>-Band 44
+slider46:-70<-70,0,0.1>-Band 45
+slider47:-70<-70,0,0.1>-Band 46
+slider48:-70<-70,0,0.1>-Band 47
+slider49:-70<-70,0,0.1>-Band 48
+slider50:-70<-70,0,0.1>-Band 49
+slider51:-70<-70,0,0.1>-Band 50
+slider52:-70<-70,0,0.1>-Band 51
+slider53:-70<-70,0,0.1>-Band 52
+slider54:-70<-70,0,0.1>-Band 53
+slider55:-70<-70,0,0.1>-Band 54
+slider56:-70<-70,0,0.1>-Band 55
+slider57:-70<-70,0,0.1>-Band 56
+slider58:-70<-70,0,0.1>-Band 57
+slider59:-70<-70,0,0.1>-Band 58
+slider60:-70<-70,0,0.1>-Band 59
+slider61:-70<-70,0,0.1>-Band 60
+slider62:-70<-70,0,0.1>-Band 61
+slider63:-70<-70,0,0.1>-Band 62
+slider64:-70<-70,0,0.1>-Band 63
+slider65:96<0,192,1>Clock (kHz)
+slider66:1024<0,8192,1>Buffer (samples)
+slider67:10<0,2000,0.1>True Latency (ms)
+slider68:12984<0,100000,1>PDC Offset (samples)
+
+@init
+fftsize = 8192;
+window_type = 1; // Blackman-Harris
+tilt_db_per_oct = 3.0; // +3dB/octave tilt (makes pink noise flat)
+
+// Arrays
+window = 0;
+buffer = fftsize;
+bins = buffer + fftsize * 2;
+
+// Generate window
+i = 0;
+loop(fftsize,
+  window[i] = 0.35875 - 0.48829 * cos(2 * $pi * i / fftsize) + 0.14128 * cos(4 * $pi * i / fftsize) - 0.01168 * cos(6 * $pi * i / fftsize);
+  i += 1;
+);
+
+buf_pos = 0;
+heartbeat_timer = 0;
+
+@slider
+
+@block
+slider65 = srate / 1000;
+slider66 = samplesblock;
+slider67 = ((samplesblock + slider68) / srate) * 1000;
+
+// Pulse stats every ~1 second to keep Kiosk UI in sync even after Kiosk restart
+heartbeat_timer += samplesblock;
+heartbeat_timer >= srate ? (
+  slider_automate(slider65);
+  slider_automate(slider66);
+  slider_automate(slider67);
+  heartbeat_timer = 0;
+);
+
+@sample
+// Mix down to mono and window it
+val = (spl0 + spl1) * 0.5;
+buffer[buf_pos * 2] = val * window[buf_pos];
+buffer[buf_pos * 2 + 1] = 0;
+
+buf_pos += 1;
+buf_pos >= fftsize ? (
+  buf_pos = 0;
+  
+  // Perform FFT
+  fft(buffer, fftsize);
+  fft_permute(buffer, fftsize);
+  
+  // Calculate log-spaced bands (10Hz to ~20kHz)
+  min_f = 10;
+  max_f = 20000;
+  srate_nyquist = srate * 0.5;
+  
+  band = 0;
+  loop(64,
+    // Calculate frequency range for this band
+    f_start = min_f * exp(log(max_f / min_f) * (band / 64));
+    f_end = min_f * exp(log(max_f / min_f) * ((band + 1) / 64));
+    
+    bin_start = floor(f_start / srate_nyquist * (fftsize / 2));
+    bin_end = ceil(f_end / srate_nyquist * (fftsize / 2));
+    
+    bin_start = max(1, bin_start);
+    bin_end = min(fftsize / 2 - 1, bin_end);
+    bin_start > bin_end ? bin_end = bin_start;
+    
+    // Sum energy in this band
+    energy = 0;
+    j = bin_start;
+    loop(bin_end - bin_start + 1,
+      real = buffer[j * 2];
+      imag = buffer[j * 2 + 1];
+      energy += real * real + imag * imag;
+      j += 1;
+    );
+    
+    // Normalize magnitude based on window coherent gain (0.35875) and FFT size
+    mag = sqrt(energy) / (0.35875 * (fftsize / 2));
+    
+    // Convert to dB
+    db = mag > 0.0000000001 ? 20 * log10(mag) : -90;
+    
+    // Apply frequency tilt (referenced to 1kHz)
+    f_center = sqrt(f_start * f_end);
+    tilt = tilt_db_per_oct * (log(f_center / 1000) / log(2));
+    db += tilt;
+    
+    db < -70 ? db = -70;
+    db > 0 ? db = 0;
+    
+    // Assign to corresponding slider
+    band == 0 ? slider1 = db :
+    band == 1 ? slider2 = db :
+    band == 2 ? slider3 = db :
+    band == 3 ? slider4 = db :
+    band == 4 ? slider5 = db :
+    band == 5 ? slider6 = db :
+    band == 6 ? slider7 = db :
+    band == 7 ? slider8 = db :
+    band == 8 ? slider9 = db :
+    band == 9 ? slider10 = db :
+    band == 10 ? slider11 = db :
+    band == 11 ? slider12 = db :
+    band == 12 ? slider13 = db :
+    band == 13 ? slider14 = db :
+    band == 14 ? slider15 = db :
+    band == 15 ? slider16 = db :
+    band == 16 ? slider17 = db :
+    band == 17 ? slider18 = db :
+    band == 18 ? slider19 = db :
+    band == 19 ? slider20 = db :
+    band == 20 ? slider21 = db :
+    band == 21 ? slider22 = db :
+    band == 22 ? slider23 = db :
+    band == 23 ? slider24 = db :
+    band == 24 ? slider25 = db :
+    band == 25 ? slider26 = db :
+    band == 26 ? slider27 = db :
+    band == 27 ? slider28 = db :
+    band == 28 ? slider29 = db :
+    band == 29 ? slider30 = db :
+    band == 30 ? slider31 = db :
+    band == 31 ? slider32 = db :
+    band == 32 ? slider33 = db :
+    band == 33 ? slider34 = db :
+    band == 34 ? slider35 = db :
+    band == 35 ? slider36 = db :
+    band == 36 ? slider37 = db :
+    band == 37 ? slider38 = db :
+    band == 38 ? slider39 = db :
+    band == 39 ? slider40 = db :
+    band == 40 ? slider41 = db :
+    band == 41 ? slider42 = db :
+    band == 42 ? slider43 = db :
+    band == 43 ? slider44 = db :
+    band == 44 ? slider45 = db :
+    band == 45 ? slider46 = db :
+    band == 46 ? slider47 = db :
+    band == 47 ? slider48 = db :
+    band == 48 ? slider49 = db :
+    band == 49 ? slider50 = db :
+    band == 50 ? slider51 = db :
+    band == 51 ? slider52 = db :
+    band == 52 ? slider53 = db :
+    band == 53 ? slider54 = db :
+    band == 54 ? slider55 = db :
+    band == 55 ? slider56 = db :
+    band == 56 ? slider57 = db :
+    band == 57 ? slider58 = db :
+    band == 58 ? slider59 = db :
+    band == 59 ? slider60 = db :
+    band == 60 ? slider61 = db :
+    band == 61 ? slider62 = db :
+    band == 62 ? slider63 = db :
+    band == 63 ? slider64 = db;
+    
+    band += 1;
+  );
+  
+  // Force update for all sliders (including those > 32)
+  sliderchange(-1);
+);

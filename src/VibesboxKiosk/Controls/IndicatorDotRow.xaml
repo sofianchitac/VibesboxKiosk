@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="VibesboxKiosk.Controls.IndicatorDotRow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Height="50" HorizontalAlignment="Center">
+        <StackPanel x:Name="DotsPanel"
+                    Orientation="Horizontal"
+                    Spacing="4"
+                    Height="16"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"/>
+        <TextBlock x:Name="GroupLabelText"
+                   FontFamily="{StaticResource PrimaryFontFamilyMedium}"
+                   FontSize="12"
+                   LineHeight="18"
+                   CharacterSpacing="150"
+                   Foreground="{StaticResource TextMutedBrush}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,32,0,0"/>
+    </Grid>
+</UserControl>

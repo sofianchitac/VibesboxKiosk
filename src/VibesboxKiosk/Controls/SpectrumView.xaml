@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="VibesboxKiosk.Controls.SpectrumView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    SizeChanged="OnSizeChanged">
+
+    <Grid Background="{StaticResource BgPrimaryBrush}">
+
+        <!-- Log-frequency vertical grid lines (created in code-behind) -->
+        <Canvas x:Name="GridCanvas"/>
+
+        <!-- Spectrum fill path + outline path. The outline stroke fades to transparent
+             over the first/last 1 % so its round caps (which extend 1 px past x=0 and
+             x=w) stay hidden. Stop colours are set from the theme in code-behind. -->
+        <Canvas x:Name="SpectrumCanvas">
+            <Path x:Name="FillPath"
+                  Fill="{StaticResource SpectrumFillBrush}"
+                  StrokeThickness="0"/>
+            <Path x:Name="OutlinePath"
+                  StrokeThickness="2"
+                  StrokeLineJoin="Round">
+                <Path.Stroke>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop x:Name="OutlineStartStop" Offset="0.00"/>
+                        <GradientStop x:Name="OutlineStop1" Offset="0.01"/>
+                        <GradientStop x:Name="OutlineStop2" Offset="0.99"/>
+                        <GradientStop x:Name="OutlineEndStop" Offset="1.00"/>
+                    </LinearGradientBrush>
+                </Path.Stroke>
+            </Path>
+        </Canvas>
+
+        <!-- Mask strip: the Catmull-Rom-smoothed outline can occasionally dip
+             a few px below the spectrum drawing area (h - LabelAreaH), poking
+             into the gap between the white baseline and the frequency labels.
+             This opaque-black strip sits over that gap so any descents stay
+             hidden. Z-ordered after SpectrumCanvas (covers the orange) but
+             before LabelCanvas (Hz labels render on top of it) and before the
+             white baseline rectangle below. Top aligns with the bottom of the
+             white baseline (h - 40); bottom leaves a small (~3 px) clearance
+             above the Hz labels (which sit at labelTop = h - 24) so the
+             label ascenders aren't clipped. -->
+        <Rectangle Height="13"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,0,27"
+                   Fill="{StaticResource BgPrimaryBrush}"
+                   IsHitTestVisible="False"/>
+
+        <!-- Frequency labels (TextBlocks added in code-behind) -->
+        <Canvas x:Name="LabelCanvas"/>
+
+        <!-- White baseline above the label area, faded at both edges -->
+        <Rectangle Height="4"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,0,40"
+                   IsHitTestVisible="False">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                    <GradientStop Color="#00FFFFFF"  Offset="0.00"/>
+                    <GradientStop Color="White"      Offset="0.07"/>
+                    <GradientStop Color="White"      Offset="0.93"/>
+                    <GradientStop Color="#00FFFFFF"  Offset="1.00"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!-- Left/right edge fades now drawn once in DashboardPage's SpectrumArea
+             (one shared pair over the spectrum + NowPlaying card) — not per-element. -->
+
+    </Grid>
+</UserControl>

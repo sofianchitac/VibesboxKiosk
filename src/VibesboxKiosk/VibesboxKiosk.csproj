@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>VibesboxKiosk</RootNamespace>
+    <AssemblyName>VibesboxKiosk</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <!-- Unpackaged app, so no MSIX tile set: this .ico is what Explorer, the
+         taskbar and the title bar use (embedded as a PE resource). Kept out of
+         Assets\ so the Content glob does not also copy it beside the exe. -->
+    <ApplicationIcon>VibesboxKiosk.ico</ApplicationIcon>
+
+    <Platforms>x64</Platforms>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+
+    <UseWinUI>true</UseWinUI>
+    <WindowsPackageType>None</WindowsPackageType>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <!-- Bundle the Windows App SDK runtime so the exe runs on a clean Windows 11
+         install without the Windows App Runtime being installed separately. -->
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+
+    <!-- AOT: enabled for Release publish. Dev loop uses `dotnet run` (Debug), which
+         ignores PublishAot. Only `dotnet publish` with this flag triggers the AOT
+         compiler. See build/publish.ps1. -->
+    <PublishAot>true</PublishAot>
+    <IsAotCompatible>true</IsAotCompatible>
+    <SelfContained>true</SelfContained>
+
+    <!-- Guard: fail fast if any code path accidentally reaches for reflection-based
+         System.Text.Json. ConfigService uses JsonSerializerContext source-gen. -->
+    <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
+
+    <!-- Suppress AOT/trim warnings from Microsoft.Web.WebView2.Core.Projection.
+         WebView2 is a transitive dep of Windows App SDK 1.6 but the kiosk does
+         not instantiate a WebView2 control anywhere — these warnings cover code
+         paths we never reach at runtime. IL2104 = trim-rollup, IL3053 = AOT-rollup.
+         Re-evaluate if WebView2 is ever added to the kiosk. -->
+    <NoWarn>$(NoWarn);IL2104;IL3053</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="2.5.1" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.9169" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Themes\Fonts\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

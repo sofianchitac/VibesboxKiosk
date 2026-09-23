@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="VibesboxKiosk.Controls.PowerOverlay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Opacity="0"
+    IsHitTestVisible="False">
+
+    <!-- Full-screen dark backdrop — tap to dismiss -->
+    <Border AutomationProperties.AutomationId="PowerBackdrop" Tapped="Backdrop_Tapped">
+        <Border.Background>
+            <AcrylicBrush TintColor="#FF000000" TintOpacity="0" FallbackColor="#FF000000"/>
+        </Border.Background>
+
+        <!-- Shutdown / Restart / Display Off buttons, centered -->
+        <StackPanel Orientation="Horizontal"
+                    Spacing="60"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+            <!-- Shutdown -->
+            <StackPanel x:Name="ShutdownItem" Spacing="16" HorizontalAlignment="Center">
+                <Border Width="80" Height="80"
+                        CornerRadius="40"
+                        Background="{StaticResource ColorOrangeBrush}"
+                        AutomationProperties.AutomationId="BtnShutdown"
+                        AutomationProperties.Name="Shutdown"
+                        Tapped="Shutdown_Tapped">
+                    <Path Data="M12,2 L12,12 M18.36,6.64 A9,9 0,1,1,5.64,6.64"
+                          Stroke="Black"
+                          StrokeThickness="3"
+                          StrokeStartLineCap="Round"
+                          StrokeEndLineCap="Round"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Stretch="Uniform"
+                          Width="32" Height="32"/>
+                </Border>
+                <TextBlock Text="Shutdown"
+                           FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Foreground="{StaticResource TextPrimaryBrush}"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <!-- Restart -->
+            <StackPanel x:Name="RestartItem" Spacing="16" HorizontalAlignment="Center">
+                <Border Width="80" Height="80"
+                        CornerRadius="40"
+                        Background="{StaticResource ColorCyanBrush}"
+                        AutomationProperties.AutomationId="BtnRestart"
+                        AutomationProperties.Name="Restart"
+                        Tapped="Restart_Tapped">
+                    <!-- Circular arrow (↻) path -->
+                    <Path Data="M12,5 A7,7,0,1,1,5.27,9 M12,5 L9,2 M12,5 L9,8"
+                          Stroke="Black"
+                          StrokeThickness="2.5"
+                          StrokeStartLineCap="Round"
+                          StrokeEndLineCap="Round"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Stretch="Uniform"
+                          Width="32" Height="32"/>
+                </Border>
+                <TextBlock Text="Restart"
+                           FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Foreground="{StaticResource TextPrimaryBrush}"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <!-- Display Off (white) -->
+            <StackPanel x:Name="DisplayOffItem" Spacing="16" HorizontalAlignment="Center">
+                <Border Width="80" Height="80"
+                        CornerRadius="40"
+                        Background="White"
+                        AutomationProperties.AutomationId="BtnDisplayOff"
+                        AutomationProperties.Name="Display Off"
+                        Tapped="DisplayOff_Tapped">
+                    <!-- Monitor icon: screen rectangle + stand + base -->
+                    <Path Data="M3,3 H21 V15 H3 Z M12,15 L12,19 M8,19 H16"
+                          Stroke="Black"
+                          StrokeThickness="2.5"
+                          StrokeStartLineCap="Round"
+                          StrokeEndLineCap="Round"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Stretch="Uniform"
+                          Width="34" Height="28"/>
+                </Border>
+                <TextBlock Text="Display Off"
+                           FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Foreground="{StaticResource TextPrimaryBrush}"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

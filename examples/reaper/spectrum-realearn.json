@@ -1,0 +1,3403 @@
+{
+  "kind": "MainCompartment",
+  "version": "2.18.2",
+  "value": {
+    "defaultGroup": {
+      "id": "rEFdb_enA3wpckGwlPfl4",
+      "name": "Spectrum Bands"
+    },
+    "mappings": [
+      {
+        "id": "cqz3uAA1Qf-UX84wuJ_IY",
+        "name": "Spectrum Band 0",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/0",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "gX6qKaC8S7eB-ftjxv4jG",
+        "name": "Spectrum Band 1",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/1",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 1,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "9V9yC7aaRf-4dTlaXZ6e2",
+        "name": "Spectrum Band 2",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/2",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 2,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "6-7G_beBRQustQo4_mNYE",
+        "name": "Spectrum Band 3",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/3",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 3,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "27k78Y62TSeE9GUQANbCk",
+        "name": "Spectrum Band 4",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/4",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 4,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "HnJnmr75S7Sl0wxhHIO_Y",
+        "name": "Spectrum Band 5",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/5",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 5,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "BEWxDdD1TbySXbM5fqfLm",
+        "name": "Spectrum Band 6",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/6",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 6,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "DmKqpGz0Rtq_AARX8kQGw",
+        "name": "Spectrum Band 7",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/7",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 7,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "JmWqwKcdT1aHlY62Vj722",
+        "name": "Spectrum Band 8",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/8",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 8,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "gGhhp_h4RI-HJW-yRvD96",
+        "name": "Spectrum Band 9",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/9",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 9,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "vB-hueJdRC2qATINPW_tv",
+        "name": "Spectrum Band 10",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/10",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 10,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "ZXZYURPEQ3SF7gqMMeXRc",
+        "name": "Spectrum Band 11",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/11",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 11,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "stuCMkwsTOi55Kx7gKont",
+        "name": "Spectrum Band 12",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/12",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 12,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "GunTlpEHSpuZoQR7qDgXL",
+        "name": "Spectrum Band 13",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/13",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 13,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "QqiwzMkeS_OzqrBzzX1sK",
+        "name": "Spectrum Band 14",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/14",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 14,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "fWwBxcoTT-aVfGoafWnyA",
+        "name": "Spectrum Band 15",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/15",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 15,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "qlF6jGd1Sf6RKrRTdfGub",
+        "name": "Spectrum Band 16",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/16",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 16,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "0CKet9nlTUaHXkfJywuS6",
+        "name": "Spectrum Band 17",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/17",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 17,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "tHUTrNruQ8-JWozMk4bT1",
+        "name": "Spectrum Band 18",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/18",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 18,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "4LTck6geSEG81nT57__6G",
+        "name": "Spectrum Band 19",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/19",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 19,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "9r_PWG0iTtWwvCTd_pwx_",
+        "name": "Spectrum Band 20",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/20",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 20,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "Um0tuPX2RjSIL_BeXgDZS",
+        "name": "Spectrum Band 21",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/21",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 21,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "Fs-d8AV4TnWrRxpK2Txhu",
+        "name": "Spectrum Band 22",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/22",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 22,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "x7gvsrXHQriF9ng578_U_",
+        "name": "Spectrum Band 23",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/23",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 23,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "TU_tb--QSAGn8E8pY46t8",
+        "name": "Spectrum Band 24",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/24",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 24,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "41tPxf8uSN6ezZ6Btm79s",
+        "name": "Spectrum Band 25",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/25",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 25,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "8_5yeE2hTWCjP90mAXYAO",
+        "name": "Spectrum Band 26",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/26",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 26,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "Fy8yc73SSbu-9MlZwU_bf",
+        "name": "Spectrum Band 27",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/27",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 27,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "KwTizCXBToezS9HxuDDEk",
+        "name": "Spectrum Band 28",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/28",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 28,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "4K5SLJXWRCuNCX1YPGlsO",
+        "name": "Spectrum Band 29",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/29",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 29,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "avkDZ10FQ02iDx8xKWaOn",
+        "name": "Spectrum Band 30",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/30",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 30,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "0Uuv0wpzQSO3X-PyePOln",
+        "name": "Spectrum Band 31",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/31",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 31,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "8RpCnqAZQt-zlX9dcuPEM",
+        "name": "Spectrum Band 32",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/32",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 32,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "EckB0g4RSfCvZjKQDubHk",
+        "name": "Spectrum Band 33",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/33",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 33,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "HuasyBmBSzusuTRedOCUi",
+        "name": "Spectrum Band 34",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/34",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 34,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "L7b3-QNdQ7uVelcr3vqiV",
+        "name": "Spectrum Band 35",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/35",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 35,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "wlYQt91jRueHg-gjvJvOK",
+        "name": "Spectrum Band 36",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/36",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 36,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "_z9c-O-LQgOPjHUIJXywt",
+        "name": "Spectrum Band 37",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/37",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 37,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "xDOH7XbRQQStzhKwESmWJ",
+        "name": "Spectrum Band 38",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/38",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 38,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "25zXiHnBQZuZq3RidQgok",
+        "name": "Spectrum Band 39",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/39",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 39,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "X15l8paISiyPJtVIXdJyk",
+        "name": "Spectrum Band 40",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/40",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 40,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "2ElFe3XCSzCZq1FDgAleW",
+        "name": "Spectrum Band 41",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/41",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 41,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "nHQd0mVXQQO9Q6sWNL4vz",
+        "name": "Spectrum Band 42",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/42",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 42,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "9NIXaixoSKaKl9W5yvEyJ",
+        "name": "Spectrum Band 43",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/43",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 43,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "Jzr0sjkyRFila6s7LXj1g",
+        "name": "Spectrum Band 44",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/44",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 44,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "2Qa4vodmS1CxmAdXRGQST",
+        "name": "Spectrum Band 45",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/45",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 45,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "7ReMgmR2R3yBB-lKuvkvI",
+        "name": "Spectrum Band 46",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/46",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 46,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "c6yBf7f3QciOgFhftPEP4",
+        "name": "Spectrum Band 47",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/47",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 47,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "kvav7QbmTmWE5sDXt9SRk",
+        "name": "Spectrum Band 48",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/48",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 48,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "Sx_wmFnFT9-dKzRWZSpyJ",
+        "name": "Spectrum Band 49",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/49",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 49,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "FuC4T0qfRJ2ggJ-4v2I71",
+        "name": "Spectrum Band 50",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/50",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 50,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "G0VEZX2MTr2XL5k0hA19Z",
+        "name": "Spectrum Band 51",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/51",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 51,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "zseNDunVQP6W-d1j_yYps",
+        "name": "Spectrum Band 52",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/52",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 52,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "fmYO_qLoTV2q1g8szKA7z",
+        "name": "Spectrum Band 53",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/53",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 53,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "B0mqnW0JRb2qjQUzRWpXv",
+        "name": "Spectrum Band 54",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/54",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 54,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "ZX4W0t2QSAO0GtHGHa8za",
+        "name": "Spectrum Band 55",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/55",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 55,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "K9rAN6cZR4Gvy9DjTtYHU",
+        "name": "Spectrum Band 56",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/56",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 56,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "_BOend_sSDGANramVAwEZ",
+        "name": "Spectrum Band 57",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/57",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 57,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "wNU_MJBxRlWR8Uje_1rZN",
+        "name": "Spectrum Band 58",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/58",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 58,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "YXKPciMqQzyEHTo7B8se2",
+        "name": "Spectrum Band 59",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/59",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 59,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "0LmyF3I2SFKrFNKeuuBAS",
+        "name": "Spectrum Band 60",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/60",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 60,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "XnZGNDzPQDq8lxlZq1yVz",
+        "name": "Spectrum Band 61",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/61",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 61,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "esrB7VKyTsqjM2y7vVxRZ",
+        "name": "Spectrum Band 62",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/62",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 62,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      },
+      {
+        "id": "y9cmTv5dRpGJPA2qQTvEV",
+        "name": "Spectrum Band 63",
+        "groupId": "rEFdb_enA3wpckGwlPfl4",
+        "source": {
+          "category": "osc",
+          "isRegistered": false,
+          "is14Bit": false,
+          "oscAddressPattern": "/vibesbox/spectrum/63",
+          "oscArgIndex": 0,
+          "oscArgValueRange": {
+            "min": -70.0,
+            "max": 0.0
+          },
+          "buttonIndex": 0,
+          "buttonDesign": {
+            "background": {
+              "kind": "Color"
+            },
+            "foreground": {
+              "kind": "None"
+            },
+            "static_text": ""
+          }
+        },
+        "mode": {
+          "maxStepSize": 0.05,
+          "minStepFactor": 1,
+          "maxStepFactor": 5
+        },
+        "target": {
+          "unit": "percent",
+          "fxAnchor": "id",
+          "fxIndex": 2,
+          "fxGUID": "0F40F4AC-2D6D-42E5-A3D6-0719611427D9",
+          "useSelectionGanging": false,
+          "useTrackGrouping": false,
+          "paramIndex": 63,
+          "seekBehavior": "Immediate",
+          "useProject": true,
+          "moveView": true,
+          "seekPlay": true,
+          "oscArgIndex": 0,
+          "mouseAction": {
+            "kind": "MoveTo",
+            "axis": "X"
+          },
+          "takeMappingSnapshot": {
+            "kind": "LastLoaded"
+          }
+        },
+        "controlIsEnabled": false
+      }
+    ]
+  }
+}

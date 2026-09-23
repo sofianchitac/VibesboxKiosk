@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="VibesboxKiosk.Controls.ActionButton"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid x:Name="LayoutRoot">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="ButtonStates">
+                <VisualState x:Name="StateIdle">
+                    <VisualState.Setters>
+                        <Setter Target="RootBorder.Background"   Value="{StaticResource BtnIdleBrush}"/>
+                        <Setter Target="TitleText.Foreground"    Value="#111111"/>
+                        <Setter Target="StatusText.Foreground"   Value="#111111"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="StatePlaying">
+                    <VisualState.Setters>
+                        <Setter Target="RootBorder.Background"   Value="{StaticResource BtnPlayingBrush}"/>
+                        <Setter Target="TitleText.Foreground"    Value="#111111"/>
+                        <Setter Target="StatusText.Foreground"   Value="#111111"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <!-- Active: white bg, orange text, composition glow via code-behind -->
+                <VisualState x:Name="StateActive">
+                    <VisualState.Setters>
+                        <Setter Target="RootBorder.Background"   Value="{StaticResource BtnActiveBrush}"/>
+                        <Setter Target="TitleText.Foreground"    Value="{StaticResource ColorOrangeBrush}"/>
+                        <Setter Target="StatusText.Foreground"   Value="{StaticResource ColorOrangeBrush}"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="StateOff">
+                    <VisualState.Setters>
+                        <Setter Target="RootBorder.Background"   Value="{StaticResource BtnOffBrush}"/>
+                        <Setter Target="TitleText.Foreground"    Value="{StaticResource TextMutedBrush}"/>
+                        <Setter Target="StatusText.Foreground"   Value="{StaticResource TextMutedBrush}"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <!-- Glow layer — composition DropShadow attached in code-behind -->
+        <Border x:Name="GlowHost" CornerRadius="14" IsHitTestVisible="False"/>
+
+        <Border x:Name="RootBorder"
+                Background="{StaticResource BtnIdleBrush}"
+                CornerRadius="14"
+                Padding="18,6"
+                Height="72"
+                HorizontalAlignment="Stretch">
+            <StackPanel Spacing="1" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                <!-- DownOnly Viewbox: long user labels shrink to fit instead of clipping. -->
+                <Viewbox StretchDirection="DownOnly" HorizontalAlignment="Center">
+                    <TextBlock x:Name="TitleText"
+                               FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                               FontSize="32"
+                               FontWeight="Bold"
+                               Foreground="#111111"/>
+                </Viewbox>
+                <TextBlock x:Name="StatusText"
+                           FontFamily="{StaticResource PrimaryFontFamilyMedium}"
+                           FontSize="12"
+                           CharacterSpacing="150"
+                           Foreground="#111111"
+                           HorizontalAlignment="Center"
+                           TextTrimming="CharacterEllipsis"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

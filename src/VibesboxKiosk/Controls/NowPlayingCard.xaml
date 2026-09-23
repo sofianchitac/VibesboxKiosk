@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="VibesboxKiosk.Controls.NowPlayingCard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Opacity="0"
+    IsHitTestVisible="False">
+
+    <Grid x:Name="Root" Background="Transparent" Tapped="OnTapped">
+
+        <!-- Acrylic blur over the SpectrumView beneath -->
+        <Border>
+            <Border.Background>
+                <AcrylicBrush TintColor="#FF000000" TintOpacity="0" FallbackColor="#FF000000"/>
+            </Border.Background>
+        </Border>
+
+        <!-- Content layer: scales up + rises on show, recedes on hide. The backdrop,
+             edge fades and baseline below stay put (fade only) so nothing slides
+             against the static spectrum beneath. -->
+        <Grid x:Name="ContentLayer" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <CompositeTransform x:Name="ContentTransform"/>
+            </Grid.RenderTransform>
+
+        <!-- ── Layout 1: Generic (single big title, e.g. "USB Audio") ───────── -->
+        <TextBlock x:Name="GenericTitle"
+                   Visibility="Collapsed"
+                   FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                   FontSize="32"
+                   FontWeight="Bold"
+                   Foreground="{StaticResource TextPrimaryBrush}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <!-- ── Layout 2: Centered text (no artwork, has artist) ─────────────── -->
+        <StackPanel x:Name="CenteredStack"
+                    Visibility="Collapsed"
+                    Spacing="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Margin="80,0,80,40">
+            <TextBlock x:Name="CenteredSourceLabel"
+                       FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                       FontSize="13"
+                       FontWeight="Bold"
+                       CharacterSpacing="200"
+                       Foreground="{StaticResource ColorOrangeBrush}"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,8"/>
+            <TextBlock x:Name="CenteredTitle"
+                       FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                       FontSize="32"
+                       FontWeight="Bold"
+                       Foreground="{StaticResource TextPrimaryBrush}"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"
+                       MaxLines="2"
+                       TextWrapping="Wrap"
+                       TextTrimming="CharacterEllipsis"
+                       LineHeight="38"/>
+            <TextBlock x:Name="CenteredArtist"
+                       FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                       FontSize="32"
+                       FontWeight="Bold"
+                       Foreground="{StaticResource ColorOrangeBrush}"
+                       HorizontalAlignment="Center"
+                       LineHeight="38"/>
+            <TextBlock x:Name="CenteredAlbum"
+                       FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Foreground="{StaticResource TextMutedBrush}"
+                       HorizontalAlignment="Center"
+                       Margin="0,4,0,0"
+                       MaxLines="1"
+                       TextWrapping="NoWrap"
+                       TextTrimming="Clip"/>
+            <Grid x:Name="CenteredProgress" Height="2" Width="630" Margin="0,16,0,0">
+                <Rectangle Fill="#22FFFFFF" RadiusX="1" RadiusY="1"/>
+                <Rectangle x:Name="CenteredProgressFill"
+                           Fill="{StaticResource ColorOrangeBrush}"
+                           HorizontalAlignment="Left"
+                           RadiusX="1" RadiusY="1"
+                           Width="0"/>
+            </Grid>
+        </StackPanel>
+
+        <!-- ── Layout 3: Album-art + left-aligned text ──────────────────────── -->
+        <Grid x:Name="ArtLayout"
+              Visibility="Collapsed"
+              Margin="80,0,80,40"
+              VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Album art tile -->
+            <Border Grid.Column="0"
+                    Width="200" Height="200"
+                    CornerRadius="6"
+                    Background="{StaticResource BgCardBrush}">
+                <Border.Clip>
+                    <RectangleGeometry Rect="0,0,200,200"/>
+                </Border.Clip>
+                <Image x:Name="AlbumArtImage" Stretch="UniformToFill"/>
+            </Border>
+
+            <!-- Text stack -->
+            <StackPanel Grid.Column="1"
+                        Spacing="0"
+                        VerticalAlignment="Center"
+                        Margin="32,0,0,0">
+                <TextBlock x:Name="ArtSourceLabel"
+                           FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                           FontSize="13"
+                           FontWeight="Bold"
+                           CharacterSpacing="200"
+                           Foreground="{StaticResource ColorOrangeBrush}"
+                           Margin="0,0,0,8"/>
+                <TextBlock x:Name="ArtTitle"
+                           FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                           FontSize="32"
+                           FontWeight="Bold"
+                           Foreground="{StaticResource TextPrimaryBrush}"
+                           MaxLines="2"
+                           TextWrapping="Wrap"
+                           TextTrimming="CharacterEllipsis"
+                           LineHeight="38"/>
+                <TextBlock x:Name="ArtArtist"
+                           FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                           FontSize="32"
+                           FontWeight="Bold"
+                           Foreground="{StaticResource ColorOrangeBrush}"
+                           LineHeight="38"
+                           MaxLines="1"
+                           TextWrapping="NoWrap"
+                           TextTrimming="Clip"/>
+
+                <!-- Album row (overflow handled by the shared SpectrumArea edge fade) -->
+                <Grid x:Name="ArtAlbumRow" Margin="0,4,0,0">
+                    <TextBlock x:Name="ArtAlbum"
+                               FontFamily="{StaticResource PrimaryFontFamilyBold}"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Foreground="{StaticResource TextMutedBrush}"
+                               MaxLines="1"
+                               TextWrapping="NoWrap"
+                               TextTrimming="CharacterEllipsis"/>
+                </Grid>
+
+                <Grid x:Name="ArtProgress" Height="2" HorizontalAlignment="Stretch" Margin="0,16,0,0">
+                    <Rectangle Fill="#22FFFFFF" RadiusX="1" RadiusY="1"/>
+                    <Rectangle x:Name="ArtProgressFill"
+                               Fill="{StaticResource ColorOrangeBrush}"
+                               HorizontalAlignment="Left"
+                               RadiusX="1" RadiusY="1"
+                               Width="0"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+        </Grid>
+
+        <!-- ── Edge fades: top/bottom 40px, left/right 80px (matches Spectrum) ── -->
+        <!-- Top fade: opaque black at top → transparent 40px down -->
+        <Rectangle Height="40" VerticalAlignment="Top" IsHitTestVisible="False">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#FF000000" Offset="0"/>
+                    <GradientStop Color="#00000000" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <!-- Bottom fade: transparent → opaque black, 40px tall -->
+        <Rectangle Height="40" VerticalAlignment="Bottom" IsHitTestVisible="False">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#00000000" Offset="0"/>
+                    <GradientStop Color="#FF000000" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <!-- Left/right edge fades now drawn once in DashboardPage's SpectrumArea
+             (one shared pair over the spectrum + NowPlaying card) — not per-element. -->
+
+        <!-- White baseline (same as SpectrumView) — drawn LAST so it sits above the bottom fade -->
+        <Rectangle Height="4"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,0,40"
+                   IsHitTestVisible="False">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                    <GradientStop Color="#00FFFFFF" Offset="0.00"/>
+                    <GradientStop Color="White"     Offset="0.07"/>
+                    <GradientStop Color="White"     Offset="0.93"/>
+                    <GradientStop Color="#00FFFFFF" Offset="1.00"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+    </Grid>
+</UserControl>
