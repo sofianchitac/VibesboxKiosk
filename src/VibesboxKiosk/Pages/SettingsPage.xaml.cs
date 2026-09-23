@@ -40,6 +40,17 @@ public sealed partial class SettingsPage : Page
 
     public SettingsPage()
     {
+        // Brand the stock controls (Save button, toggles, selection bar) with the
+        // kiosk's accent instead of the Windows accent colour.
+        var accent = new SolidColorBrush(ThemeService.Accent);
+        foreach (var key in new[]
+        {
+            "AccentFillColorDefaultBrush", "AccentFillColorSecondaryBrush", "AccentFillColorTertiaryBrush",
+            "ToggleSwitchFillOn", "ToggleSwitchFillOnPointerOver", "ToggleSwitchFillOnPressed",
+            "ToggleSwitchStrokeOn", "ToggleSwitchStrokeOnPointerOver", "ToggleSwitchStrokeOnPressed",
+        })
+            Resources[key] = accent;
+
         InitializeComponent();
         PathText.Text = ConfigService.Instance.ConfigPath;
 
@@ -286,34 +297,26 @@ public sealed partial class SettingsPage : Page
 
     private void Add(UIElement e) => Form.Children.Add(e);
 
-    // Styling lookups must never take the page down: a missing or unexpected
-    // resource just leaves the default look.
-    private static T? Res<T>(string key) where T : class =>
-        Application.Current.Resources.TryGetValue(key, out var o) ? o as T : null;
-
-    private static void Styled(TextBlock tb, string styleKey)
-    {
-        if (Res<Style>(styleKey) is { } style) tb.Style = style;
-    }
-
-    private static TextBlock Secondary(TextBlock tb)
-    {
-        if (Res<Brush>("TextFillColorSecondaryBrush") is { } b) tb.Foreground = b;
-        else tb.Opacity = 0.7;
-        return tb;
-    }
+    // Secondary text is dimmed with opacity rather than a theme brush looked up in
+    // code (that lookup failed and crashed the page when built in the constructor).
+    private const double SecondaryOpacity = 0.65;
 
     private void Title(string title, string description)
     {
-        var head = new TextBlock { Text = title, Margin = new Thickness(0, 16, 0, 0) };
-        Styled(head, "SubtitleTextBlockStyle");
-        Form.Children.Add(head);
-        Form.Children.Add(Secondary(new TextBlock
+        Form.Children.Add(new TextBlock
+        {
+            Text = title,
+            FontFamily = Application.Current.Resources["PrimaryFontFamilyBold"] as FontFamily ?? FontFamily.XamlAutoFontFamily,
+            FontSize = 22,
+            Margin = new Thickness(0, 16, 0, 0),
+        });
+        Form.Children.Add(new TextBlock
         {
             Text = description,
             TextWrapping = TextWrapping.Wrap,
+            Opacity = SecondaryOpacity,
             Margin = new Thickness(0, 0, 0, 8),
-        }));
+        });
     }
 
     // Label (+ optional help line) on the left, control on the right.
@@ -326,11 +329,13 @@ public sealed partial class SettingsPage : Page
         var left = new StackPanel { VerticalAlignment = VerticalAlignment.Center };
         left.Children.Add(new TextBlock { Text = label, TextWrapping = TextWrapping.Wrap });
         if (help is not null)
-        {
-            var tb = new TextBlock { Text = help, TextWrapping = TextWrapping.Wrap };
-            Styled(tb, "CaptionTextBlockStyle");
-            left.Children.Add(Secondary(tb));
-        }
+            left.Children.Add(new TextBlock
+            {
+                Text = help,
+                TextWrapping = TextWrapping.Wrap,
+                FontSize = 12,
+                Opacity = SecondaryOpacity,
+            });
         grid.Children.Add(left);
 
         control.VerticalAlignment = VerticalAlignment.Center;
