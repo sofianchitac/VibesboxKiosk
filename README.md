@@ -10,6 +10,8 @@ is: anything that can send and receive OSC works. Part of the
 [Vibesbox](https://github.com/sofianchitac/Vibesbox) home audio system, but it
 runs on its own.
 
+![The dashboard: live spectrum, status row, eight buttons, input and activity dots](docs/images/dashboard.png)
+
 ## What's on screen
 
 - **Spectrum**: one OSC value per band, drawn as a smooth curve.
@@ -29,6 +31,8 @@ runs on its own.
 The layout scales to any screen size and orientation. Colours and the logo can
 be changed.
 
+![The Now Playing card over the spectrum](docs/images/now-playing.png)
+
 ## Install
 
 1. Download `VibesboxKiosk-Setup-<version>.exe` from
@@ -45,6 +49,8 @@ The installer isn't code-signed, so SmartScreen may warn on first run. Choose
 **Press and hold the logo** (or right-click it, or press `Ctrl+,`) to open the
 settings. Every option is there, from OSC ports to button names to colours.
 Save applies the changes at once.
+
+![The settings page, editing a button](docs/images/settings.png)
 
 The settings are stored in `%LOCALAPPDATA%\VibesboxKiosk\kiosk-config.json`.
 Place a `kiosk-config.json` next to `VibesboxKiosk.exe` instead to keep the
