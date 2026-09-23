@@ -41,15 +41,21 @@ public sealed partial class SettingsPage : Page
     public SettingsPage()
     {
         // Brand the stock controls (Save button, toggles, selection bar) with the
-        // kiosk's accent instead of the Windows accent colour.
+        // kiosk's accent instead of the Windows accent colour. Control templates
+        // resolve these as theme resources, so they go in the Dark theme dictionary.
         var accent = new SolidColorBrush(ThemeService.Accent);
+        var dark = new ResourceDictionary();
         foreach (var key in new[]
         {
             "AccentFillColorDefaultBrush", "AccentFillColorSecondaryBrush", "AccentFillColorTertiaryBrush",
+            "AccentButtonBackground", "AccentButtonBackgroundPointerOver", "AccentButtonBackgroundPressed",
             "ToggleSwitchFillOn", "ToggleSwitchFillOnPointerOver", "ToggleSwitchFillOnPressed",
             "ToggleSwitchStrokeOn", "ToggleSwitchStrokeOnPointerOver", "ToggleSwitchStrokeOnPressed",
+            "ListViewItemSelectionIndicatorBrush", "ListViewItemSelectionIndicatorPointerOverBrush",
+            "ListViewItemSelectionIndicatorPressedBrush",
         })
-            Resources[key] = accent;
+            dark[key] = accent;
+        Resources.ThemeDictionaries["Dark"] = dark;
 
         InitializeComponent();
         PathText.Text = ConfigService.Instance.ConfigPath;
