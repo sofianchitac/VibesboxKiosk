@@ -203,6 +203,10 @@ public sealed class PowerConfig
     public bool Shutdown { get; set; } = true;
     public bool Restart { get; set; } = true;
     public bool DisplayOff { get; set; } = true;
+    /// <summary>Turn the display back on when the input meters show audio starting.</summary>
+    public bool WakeOnAudio { get; set; }
+    /// <summary>Audio counts as "starting" only after this long without any.</summary>
+    public double WakeQuietSeconds { get; set; } = 60;
     /// <summary>Sent before shutdown/restart, e.g. to save and quit the DAW.</summary>
     public string BeforeShutdownAddress { get; set; } = "";
 }

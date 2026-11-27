@@ -295,6 +295,10 @@ public sealed partial class SettingsPage : Page
         Add(Toggle("Shut down", w.Shutdown, v => w.Shutdown = v));
         Add(Toggle("Restart", w.Restart, v => w.Restart = v));
         Add(Toggle("Display off", w.DisplayOff, v => w.DisplayOff = v));
+        Add(Toggle("Wake display on audio", w.WakeOnAudio, v => w.WakeOnAudio = v,
+            "Turns the display on when the input meters show audio starting."));
+        Add(Number("Quiet before wake (s)", w.WakeQuietSeconds, v => w.WakeQuietSeconds = v, 1, 3600, 5,
+            "Audio counts as starting only after this long without any, so a gap between tracks doesn't wake it."));
         Add(Text("Before shutdown, send", w.BeforeShutdownAddress, v => w.BeforeShutdownAddress = v, "/vibesbox/host/quit",
             "Sent 1.2 s before shutdown, e.g. to save and quit the DAW."));
     }

@@ -66,6 +66,8 @@ ReaLearn presets that match the default settings.
   *Quit kiosk* button, or Alt+F4 from a keyboard, to get back to the desktop.
 - The power button offers shutdown, restart and display off. It can send an
   OSC message first, so the DAW saves and quits cleanly.
+- *Wake display on audio* turns the display back on when the input meters show
+  audio starting after a quiet spell.
 - The installer's autostart uses the standard Run key. A machine with a custom
   shell (in place of Explorer) skips that. Start the kiosk from an *At log on*
   Scheduled Task instead.

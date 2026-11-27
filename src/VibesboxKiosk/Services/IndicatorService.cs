@@ -11,6 +11,8 @@ namespace VibesboxKiosk.Services;
 /// • input meters — one dot per channel, brightness = level (0..1) from OSC;
 /// • activity dots — flash on any message to their address, or on the kiosk's
 ///   own outbound OSC for <see cref="ActivityConfig.OscOut"/>.
+/// The input meters also wake the display when audio starts after a quiet spell
+/// (<see cref="PowerConfig.WakeOnAudio"/>).
 /// </summary>
 public sealed class IndicatorService
 {
@@ -23,6 +25,8 @@ public sealed class IndicatorService
     private float[] _rawLevels = Array.Empty<float>();
     private float[] _intensities = Array.Empty<float>();
     private long[] _lastActiveTicks = Array.Empty<long>();
+    private long _wakeQuietMs;      // 0 = wake on audio is off
+    private long _lastAudioTicks;   // last time any channel was at/above threshold
 
     private readonly List<(IndicatorDotRow Row, string Address)> _activity = new();
     private readonly Dictionary<string, long> _lastActivityTicks = new();
@@ -48,6 +52,9 @@ public sealed class IndicatorService
         _intensities     = new float[count];
         _lastActiveTicks = new long[count];
         _inputDotBar     = inputDotBar;
+        _wakeQuietMs     = config.Power.WakeOnAudio ? (long)(config.Power.WakeQuietSeconds * 1000) : 0;
+        // A (re)start mid-programme is not audio "starting".
+        _lastAudioTicks  = Environment.TickCount64;
 
         for (int i = 0; i < count; i++)
         {
@@ -99,8 +106,18 @@ public sealed class IndicatorService
         var levels = _rawLevels;
         if (index >= levels.Length) return;
         levels[index] = value;
-        if (value >= _threshold)
-            _lastActiveTicks[index] = Environment.TickCount64;
+        if (value < _threshold) return;
+
+        long now = Environment.TickCount64;
+        _lastActiveTicks[index] = now;
+        if (_wakeQuietMs <= 0) return;
+
+        long last = Interlocked.Exchange(ref _lastAudioTicks, now);
+        if (now - last >= _wakeQuietMs)
+        {
+            Log.Info($"[Display] Audio after {(now - last) / 1000} s quiet — waking display.");
+            DisplaySleepService.WakeDisplay();
+        }
     }
 
     // ── UI thread (30 Hz) ────────────────────────────────────────────────
